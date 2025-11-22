@@ -20,7 +20,7 @@ Ensures the quantity is a positive number (> 0).
 3. Technologies/Tools Used
 Component: Language, Data structure, I/O, Logic
 Detail: Python 3.x, Dictionary (Menu), input() / print(), try...except
-Purpose: Core programming language, Static data store for items and prices., Command-Line Interface (CLI) interaction., Error handling for non-numeric input.
+Purpose: Core programming language, Static data store for items and prices, Command-Line Interface (CLI) interaction, Error handling for non-numeric input.
 4. Steps to Install & Run the Project
 Since this project has zero external dependencies, installation is minimal.
 
@@ -28,7 +28,7 @@ Prerequisites
 Python 3.x must be installed on your operating system.
 
 Running the Application
--> Clone the Repository: (Replace the placeholder URL with your actual repository link)
+-> Clone the Repository: (https://github.com/lavanyaa-06/flavor-haven-cafe)
 
 Bash
 
