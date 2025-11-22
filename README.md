@@ -1,80 +1,80 @@
-Project Overview:
-This Python script, cafe_order.py, implements a basic Command-Line Interface (CLI) point-of-sale (POS) system for a small cafe. It enables a user to select items from a fixed menu, specify quantities, and calculates the running total until the order is concluded. This project serves as a clear demonstration of core Python programming concepts.
+Project Title: Python Cafe Order
+1. Overview of the Project:
+The Python Cafe Order CLI is a minimal, self-contained application designed to simulate the core transactional logic of a simple Point-of-Sale (POS) system within the command line. Developed using procedural programming principles, it provides a clear example of how to manage a transaction state (the running total) and implement robust input validation using only the Python Standard Library. This project is an ideal learning tool for beginners focusing on control flow and error handling.
+2. Features
+The system is defined by its focus on functional integrity and simplicity:
 
- Core Features:
-Fixed Menu System: A static Python dictionary defines all available items and their corresponding prices.
+Static Menu: The menu and prices are stored in a dedicated global dictionary (Menu).
 
-Continuous Ordering: A main while loop allows customers to continuously add items to their order until a specific exit command ('stop') is entered.
+Continuous Transaction Loop: Uses a while True loop to continuously accept orders until the user enters the 'stop' command.
+
+Real-time Cost Management: The amount_total is updated immediately after each successful item entry, providing a running total.
 
 Robust Input Validation:
 
-The script validates that the item entered by the user is present in the menu.
+Checks if the ordered item exists in the menu.
 
-It uses a try...except ValueError block to ensure the quantity entered is a valid, positive integer, preventing program crashes from invalid input.
+Uses a try-except ValueError block to ensure the quantity entered is a valid integer.
 
-Real-time Total: The accumulated cost is calculated and displayed to the user after every successful item addition, providing a running total.
+Ensures the quantity is a positive number (> 0).
+3. Technologies/Tools Used
+Component: Language, Data structure, I/O, Logic
+Detail: Python 3.x, Dictionary (Menu), input() / print(), try...except
+Purpose: Core programming language, Static data store for items and prices., Command-Line Interface (CLI) interaction., Error handling for non-numeric input.
+4. Steps to Install & Run the Project
+Since this project has zero external dependencies, installation is minimal.
 
- How to Run:
 Prerequisites
-You must have Python 3.x installed on your operating system.
+Python 3.x must be installed on your operating system.
 
-Execution Steps
-Clone the Repository:
+Running the Application
+-> Clone the Repository: (Replace the placeholder URL with your actual repository link)
 
 Bash
 
-git clone https://github.com/lavanyaa-06/flavor-haven-cafe.git
-cd flavor-haven-cafe
-Run the Script:
+git clone https://github.com/lavanyaa-06/python-cafe-order-cli.git
+cd python-cafe-order-cli
+-> Execute the Script:
 
 Bash
 
 python cafe_order.py
-Example Session
-The program prompts for input and provides feedback after each entry.
+5. Instructions for Testing
+To ensure the application is running correctly and its validation logic is sound, perform the following scenarios:
 
-Welcome to Flavor Haven!
-...
-Enter 'STOP' to complete the order.
+Successful Order Test: Order items that are on the menu and enter positive quantities. Type "stop" to finish. The final bill should correctly equal the sum of the prices.
 
--> Enter item name: Croissant
-  -> Quantity for Croissant: 3
-  Item added. Cost: Rs210
-Current Outstanding Total: Rs210
+Invalid Item Test: Type an item name that is not on the menu (e.g., "Muffin"). The system should print an error message and allow you to continue.
 
--> Enter item name: stop
+Invalid Quantity Test: Order a valid item, but enter zero (0), a negative number (e.g., -2), or text (e.g., "two") for the quantity. The system must print an error message and not crash.
 
-Order Complete!
-Final Bill Total: Rs210
- Core Logic Description:
-The ordering process is encapsulated within the main function (order_cafe or run_ordering_process), following these steps:
 
-Initialization: The variable amount_total is set to zero (0).
 
-Order Loop: An infinite while True loop initiates to continuously accept new orders.
 
-Exit Condition: The loop is explicitly broken when the user enters 'stop'.
+<img width="390" height="204" alt="Screenshot 2025-11-23 013642" src="https://github.com/user-attachments/assets/5164d6a0-ee92-4549-8dd8-4aa8d9bb758a" />
 
-Menu Check: The user's input for the item name is validated against the keys of the static Menu dictionary.
 
-Quantity Handling: If the item is valid, the user is prompted for the quantity (serving).
+<img width="393" height="193" alt="Screenshot 2025-11-23 013804" src="https://github.com/user-attachments/assets/71ea4634-adfb-4244-9057-a9b2d4a4a4e6" />
 
-Error Prevention: A try-except structure manages any ValueError that may occur if the quantity input is not an integer, and ensures the quantity is greater than zero.
 
-Calculation: If all checks pass, the item cost (Menu[item] * serving) is computed and added to the amount_total.
+<img width="531" height="200" alt="Screenshot 2025-11-23 013834" src="https://github.com/user-attachments/assets/0ccd9526-2d49-4543-9969-56b64ef020a0" />
 
-Output: The script prints the updated running total after processing each input.
 
-Termination: Upon breaking the loop, a final summary message is printed, concluding the transaction.
 
- Contribution Guidelines:
-We welcome suggestions and contributions! Please feel free to open an issue or submit a pull request for bug fixes or new features, such as:
+<img width="629" height="184" alt="Screenshot 2025-11-23 013902" src="https://github.com/user-attachments/assets/efa597a8-5928-43d8-a0f3-79afe2d90a39" />
 
-Integration of sales tax.
 
-Persistent storage for sales data.
 
-Adding user-defined discounts.
+<img width="621" height="204" alt="Screenshot 2025-11-23 013931" src="https://github.com/user-attachments/assets/5ead6650-90e7-402e-98e7-a8d0c29b5c91" />
 
-Developed by [lavanyaa-06]# flavor-haven-cafe
-A Python POS simulator featuring item validation, quantity handling, and continuous total calculation via command line.
+
+
+<img width="449" height="158" alt="Screenshot 2025-11-23 014000" src="https://github.com/user-attachments/assets/c951afef-9c6e-46b5-8393-d363ebb9e788" />
+
+
+
+
+
+   
+
+ 
