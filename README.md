@@ -1,6 +1,6 @@
 Flavor Haven Cafe Order System Documentation
 
--> Project Title and Overview:
+Project Title and Overview:
 The project is the Flavor Haven Cafe Order System. This is a simple, command-line interface (CLI) application developed using Python 3.
 
 Its primary objective is to accurately mimic the customer ordering process in a small cafe. The system handles displaying the menu, interactively accepting item selections and quantities, validating the user's input for correctness, and calculating the final bill total. It serves as a practical example of fundamental programming concepts like loops, dictionaries, and exception handling.
